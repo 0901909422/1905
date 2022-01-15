@@ -10,11 +10,6 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>com.hybris.hyeclipse.tsv.builder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>com.hybris.hyeclipse.tsv.hybris</nature>

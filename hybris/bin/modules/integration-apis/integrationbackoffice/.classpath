@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" output="eclipsebin/classes" path="gensrc"/>
+	<classpathentry exported="true" kind="src" path="/platformbackoffice"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" output="eclipsebin/classes" path="testsrc"/>
+	<classpathentry kind="src" path="/platform"/>
+	<classpathentry exported="true" kind="src" path="/odata2webservices"/>
+	<classpathentry exported="true" kind="lib" path="resources/backoffice/integrationbackoffice_bof.jar"/>
+	<classpathentry exported="true" kind="lib" path="resources"/>
+	<classpathentry kind="src" output="eclipsebin/classes" path="src"/>
+	<classpathentry kind="src" output="eclipsebin/backoffice/classes" path="backoffice/src"/>
 	<classpathentry kind="output" path="backoffice/classes"/>
-
-				
-				
-				
-				
-	<classpathentry exported="true" kind="src" path="/platformbackoffice" />
-	<classpathentry exported="true" kind="src" path="/odata2webservices" />
-	<classpathentry exported="true" kind="lib" path="resources" />
-	<classpathentry exported="true" output="eclipsebin/classes" kind="src" path="src" />
-	<classpathentry exported="true" output="eclipsebin/backoffice/classes" kind="src" path="backoffice/src" />
-	<classpathentry exported="true" output="eclipsebin/classes" kind="src" path="testsrc" />
-	<classpathentry exported="true" output="eclipsebin/classes" kind="src" path="gensrc" />
-	<classpathentry exported="false" kind="src" path="/platform" />
-				
 </classpath>
-				

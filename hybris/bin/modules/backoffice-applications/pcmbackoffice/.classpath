@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="src" path="/backofficesolrsearch"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/platform"/>
+	<classpathentry exported="true" kind="lib" path="resources"/>
+	<classpathentry exported="true" kind="lib" path="resources/backoffice/pcmbackoffice_bof.jar"/>
+	<classpathentry exported="true" kind="lib" path="bin/pcmbackofficeserver.jar"/>
 	<classpathentry kind="output" path="eclipsebin/notused"/>
-
-				
-				
-	<classpathentry exported="true" kind="src" path="/backofficesolrsearch" />
-	<classpathentry exported="true" kind="lib" path="bin/pcmbackofficeserver.jar" />
-	<classpathentry exported="true" kind="lib" path="resources" />
-	<classpathentry exported="false" kind="src" path="/platform" />
-				
 </classpath>
-				

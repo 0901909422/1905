@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="src" path="/platformbackoffice"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="resources"/>
+	<classpathentry kind="src" output="eclipsebin/classes" path="src"/>
+	<classpathentry kind="src" path="/platform"/>
+	<classpathentry kind="src" output="eclipsebin/backoffice/classes" path="backoffice/src"/>
+	<classpathentry exported="true" kind="src" path="/apiregistryservices"/>
+	<classpathentry exported="true" kind="lib" path="resources/backoffice/apiregistrybackoffice_bof.jar"/>
+	<classpathentry kind="src" output="eclipsebin/classes" path="gensrc"/>
 	<classpathentry kind="output" path="eclipsebin/notused"/>
-
-				
-				
-	<classpathentry exported="true" kind="src" path="/platformbackoffice" />
-	<classpathentry exported="true" kind="src" path="/apiregistryservices" />
-	<classpathentry exported="true" kind="lib" path="resources" />
-	<classpathentry exported="true" output="eclipsebin/classes" kind="src" path="src" />
-	<classpathentry exported="true" output="eclipsebin/backoffice/classes" kind="src" path="backoffice/src" />
-	<classpathentry exported="true" output="eclipsebin/classes" kind="src" path="gensrc" />
-	<classpathentry exported="false" kind="src" path="/platform" />
-				
 </classpath>
-				
