@@ -1,0 +1,17 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+$lang=ru
+$solrIndexedType=solrIndexedType(identifier)[unique=true,default='BackofficeProduct'];
+
+#Currencies
+UPDATE Currency;isocode[unique=true];name[lang=$lang];
+;EUR;Евро;
+;USD;Доллар США;
+
+UPDATE SolrIndexedProperty;name[unique=true];$solrIndexedType;backofficeDisplayName[lang=$lang];
+;catalogVersion;;Версия каталога;
+;catalog;;каталог;
+;itemtype;;Тип элемента;
+;categoryLabel;;Категория;

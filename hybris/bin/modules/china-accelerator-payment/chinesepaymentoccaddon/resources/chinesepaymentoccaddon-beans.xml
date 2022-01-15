@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<!--
+	ATTENTION: This is just an example file. You have to edit it according to your needs.
+-->
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="beans.xsd">
+
+	<bean class="de.hybris.platform.chinesepaymentoccaddon.dto.ChinesePaymentRequestWsDTO">
+		<description>Chinese payment request</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">chinesePaymentRequest</hint>
+		</hints>
+		<property name="url" type="java.lang.String">
+			<description>Chinese payment request url, different payment modes use different parameters in the request url</description>
+			<hints>
+				<hint name="example">https://mapi.alipay.com/gateway.do?body=ProductDescription&amp;subject=ProductName&amp;sign_type=MD5&amp;notify_url=http://api.test.alipay.net&amp;out_trade_no=6741334835157966&amp;return_url=http://api.test.alipay.net/atinterface/receive_return.htm&amp;sign=dc3d42f405d7e738ab35344449e2d9f7&amp;buyer_id=2088002007018955&amp;total_fee=100&amp;service=create_direct_pay_by_user&amp;partner=2088101568338364&amp;seller_id=2088002007018966&amp;payment_type=1&amp;qr_pay_mode=1&amp;_input_charset=gbk</hint>
+      		</hints>
+		</property>
+		<property name="expiredDate" type="java.util.Date">
+			<description>Chinese payment request expired date</description>
+		</property>	
+		<property name="order" type="de.hybris.platform.commercewebservicescommons.dto.order.OrderWsDTO">
+			<description>Order data</description>
+		</property>
+	</bean>
+	
+	<bean class="de.hybris.platform.chinesepaymentoccaddon.dto.ChinesePaymentInfoWsDTO">
+		<description>Chinese payment info</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">ChinesePaymentInfo</hint>
+		</hints>
+		<property name="id" type="java.lang.String">
+			<description>Chinese payment info identifier</description>
+		</property>
+		<property name="paymentProvider" type="java.lang.String">
+			<description>Payment provider of Chinese payment info</description>
+		</property>
+		<property name="serviceType" type="java.lang.String">
+			<description>The serviceType which is used for payment and defined in different payment providers</description>
+			<hints>
+        		<hint name="example">DirectPay</hint>
+      		</hints>
+		</property>	
+		<property name="paymentProviderLogo" type="java.lang.String">
+			<description>Logo url of payment provider</description>
+			<hints>
+        		<hint name="example">/medias/wechatpay.png?context=CONTEXT</hint>
+      		</hints>
+		</property>	
+		<property name="paymentProviderName" type="java.lang.String">
+			<description>Name of payment provider</description>
+		</property>
+	</bean>
+	
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.order.PaymentModeWsDTO">
+		<property name="pspLogoUrl" type="java.lang.String">
+			<description>Logo url of payment mode</description>
+			<hints>
+        		<hint name="example">/medias/wechatpay.png?context=CONTEXT</hint>
+      		</hints>
+		</property>
+	</bean>
+	
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.order.AbstractOrderWsDTO">
+		<property name="chinesePaymentInfo" type="de.hybris.platform.chinesepaymentoccaddon.dto.ChinesePaymentInfoWsDTO">
+			<description>Chinese payment info</description>
+		</property>		
+		<property name="paymentStatus" type="java.lang.String">
+			<description>Payment status</description>
+			<hints>
+        		<hint name="example">PAID</hint>
+      		</hints>
+		</property>
+	</bean>
+
+</beans>

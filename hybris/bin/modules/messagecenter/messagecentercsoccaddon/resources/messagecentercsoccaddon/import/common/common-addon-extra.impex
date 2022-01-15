@@ -1,0 +1,6 @@
+# ---------------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# ---------------------------------------------------------------------------
+
+INSERT_UPDATE OAuthClientDetails;clientId[unique=true];clientSecret;resourceIds;scope;authorizedGrantTypes;accessTokenValiditySeconds;authorities
+;messagecentercs;messagecentercs;;basic;refresh_token,password;1000;ROLE_CUSTOMERGROUP,ROLE_CUSTOMERSUPPORTAGENTGROUP

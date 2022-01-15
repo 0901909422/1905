@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="beans.xsd">
+
+<bean class="de.hybris.platform.chinesetaxinvoiceoccaddon.dto.TaxInvoiceWsDTO">
+		<description>data type of tax invoice</description>
+		<hints>
+		    <hint name="wsRelated"/>
+		    <hint name="alias">TaxInvoice</hint>
+		</hints>
+        <property name="recipientType" type="String">
+        	<description>recipient type</description>
+        	<hints> 			
+    			<hint name="example">INDIVIDUAL,UNIT</hint>
+            </hints>
+        </property>
+        <property name="recipient" type="String">
+        	<description>name of recipient</description>
+        </property>
+        <property name="taxpayerID" type="String">
+        	<description>taxpayer identification number</description>
+        </property>			          
+	</bean>
+
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.order.AbstractOrderWsDTO">
+		<property name="taxInvoice" type="de.hybris.platform.chinesetaxinvoiceoccaddon.dto.TaxInvoiceWsDTO"/>
+	</bean>
+</beans>

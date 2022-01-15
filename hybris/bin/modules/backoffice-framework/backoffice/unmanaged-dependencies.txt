@@ -1,0 +1,11 @@
+backoffice-core-19.05.3-RC1.jar
+backoffice-widgets-19.05.3-RC1.jar
+cockpitadmin-19.05.3-RC1.jar
+cockpitcore-19.05.3-RC1.jar
+cockpit-data-integration-19.05.3-RC1.jar
+cockpit-demo-widgets-19.05.3-RC1.jar
+cockpitframework-19.05.3-RC1.jar
+cockpit-module-aggregator-19.05.3-RC1.jar
+cockpit-standard-editors-19.05.3-RC1.jar
+cockpittesting-19.05.3-RC1.jar
+cockpitwidgets-19.05.3-RC1.jar

@@ -1,0 +1,11 @@
+#Ant properties
+#Wed Jan 13 18:18:34 CET 2021
+version.api=1905
+vendor=hybris
+group.id=de.hybris.platform
+name=commerceorgaddon
+description=commerceorgaddon
+builddate=20210113 1812
+releasedate=20190628 1509
+version=1905.23
+module.name=platform-module

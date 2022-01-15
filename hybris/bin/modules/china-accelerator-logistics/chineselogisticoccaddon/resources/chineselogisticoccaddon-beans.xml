@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<!--
+	ATTENTION: This is just an example file. You have to edit it according to your needs.
+-->
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="beans.xsd">
+	
+	<bean class="de.hybris.platform.chineselogisticoccaddon.dto.DeliveryTimeSlotWsDTO">
+		<description>data type of delivery timeslot</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">DeliveryTimeSlot</hint>
+		</hints>
+		<property name="code" type="String">
+			<description>delivery timeslot code</description>
+		</property>
+		<property name="name" type="String">
+			<description>delivery timeslot name</description>
+		</property>
+	</bean>
+	
+	<bean class="de.hybris.platform.chineselogisticoccaddon.dto.DeliveryTimeSlotListWsDTO">
+		<description>list of delivery timeslot</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">deliveryTimeSlotList</hint>
+		</hints>
+		<property name="deliveryTimeSlots" type="java.util.List&lt;de.hybris.platform.chineselogisticoccaddon.dto.DeliveryTimeSlotWsDTO>">
+			<description>list of delivery timeslot</description>
+		</property>
+	</bean>
+	
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.order.AbstractOrderWsDTO">
+		<property name="deliveryTimeSlot" type="de.hybris.platform.chineselogisticoccaddon.dto.DeliveryTimeSlotWsDTO"/>
+	</bean>
+</beans>
