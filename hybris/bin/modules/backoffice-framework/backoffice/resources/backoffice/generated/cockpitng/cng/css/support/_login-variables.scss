@@ -1,0 +1,126 @@
+@import 'D:/WorkSpace/develop3/1905/hybris/bin/modules/backoffice-framework/backoffice/resources/backoffice/generated/cockpitng/cng/scss/cockpitng-globals.scss';
+@import 'D:/WorkSpace/develop3/1905/hybris/bin/modules/backoffice-framework/backoffice/resources/backoffice/generated/backoffice/scss/backoffice-variables.scss';
+
+
+
+$_login__default-label--color: $grey__dark--600;
+$_login__default--bp-xs: 500px;
+$_login__default--bp-m: 1050px;
+
+// Input Default (temporary)
+$_login__input-box--height: 36px;
+
+// Primary Buttons Styling adjustments (temporary)
+$_login__primary-button--border-radius: 4px;
+$_login__primary-button--height: $_login__input-box--height;
+$_login__primary-button--bg-color: #0a6ed1; //$blue__default; 
+$_login__primary-button--color: $white;
+$_login__primary-button--text-transform: none;
+$_login__primary-button--line-height: ceil(($_login__input-box--height * 0.61));
+
+$_login__primary-button-hover--bg-color: lighten($_login__primary-button--bg-color, 15%);
+
+$login__input-box--margin-bottom: $container-spacing-default__third;
+$login__input-box--padding: 4px 10px;
+$login__input-box--border-color: #89919a;//#ceced0;
+$login__input-box--color: #32363a;
+$login__input-box--border: $boxes--border__thin solid $login__input-box--border-color;
+$login__input-box--border-radius: 4px;
+$login__input-box--width: 227px;
+$login__input-box--font-size: $font-size__base;
+$login__input-box--box-shadow: none;
+$login__input-box--bg-color: $white;
+
+$login__input-box-focus--bg-color: $white;
+$login__input-box-focus--color: #32363a;
+$login__input-box-focus--border-color: #7bbaf9;
+$login__input-box-focus--border: $boxes--border__thin solid $login__input-box-focus--border-color;
+$login__input-box-focus--box-shadow: 0 0 0 $boxes--border__thin $login__input-box-focus--border-color;
+
+$login__radio-checked--box-shadow: 0 0 3px 0px rgba(255, 255, 255, 0.5);
+$login__radio--width: $login__input-box--width;
+
+$login__editor-box--bg-color: false;
+
+@if $login__editor-box--bg-color {
+  $login__input-box--bg-color: $login__editor-box--bg-color;
+}
+
+$login__select-box--bg-color: $login__input-box--bg-color;
+$login__select-box--bg: url(images/selectbox_arrow.svg) no-repeat center right, url(images/selectbox_arrow-bg.gif) repeat-y top right;
+$login__select-box--height: $_login__input-box--height; // $editor-defaults__inline-box--height;
+$login__select-box--border-radius: $login__input-box--border-radius;
+
+$login__z-window--bg: transparent !important;
+
+$_login__grid--bp-xs: 350px;
+$_login__grid--bp-s: 440px;
+$_login__grid--width: 400px;
+$_login__grid--margin: 10% auto 20px;
+$_login__grid-bp-xs--padding-left: 10px;
+$_login__grid-bp-s--padding-left: 20px;
+$_login__grid-hbox-separator-width: 2px;
+
+
+$login__grid-label--width: 156px;
+$_login__grid-label-bp-xs--width: 95px;
+$_login__grid-label-bp-s--width: 110px;
+$login__grid-label--line-height: $editor-defaults__inline-box--height;
+$login__grid-label--margin-bottom: 5px;
+$login__grid-label--font-size: $font-size__base;
+$login__grid-label--padding-right: $container-spacing-default__third;
+
+$login__grid-form--margin: 0 0 20px;
+
+
+$login__grid-spinner--width: $login__input-box--width;
+$login__grid-spinner-input-box--width: $login__grid-spinner--width - 19px;
+$login__grid-spinner-button--bg-color: $white;
+$login__grid-spinner-button-hover--bg-color: $blue__light--100;
+
+$login__error-notification-box--bg-color: $validation__error--color;
+
+$login__error-notification-box--border-radius: $login__input-box--border-radius;
+$login__error-notification-box--inner-spacing: $container-spacing-default__third;
+$login__error-notification-box-icon--size: 16px;
+$login__error-notification-box-icon--margin-right: $container-spacing-default__third;
+$login__error-notification-box-icon--bg: url("images/icon_status_error_white.png") no-repeat scroll;
+$login__error-notification-box--margin: 0 0 $container-spacing-default__base;
+$login__error-notification-box--padding: 10px; //($login__error-notification-box--inner-spacing) ($login__error-notification-box--inner-spacing) ($login__error-notification-box--inner-spacing + $login__grid-label--margin-bottom) ($login__error-notification-box--inner-spacing + $login__error-notification-box-icon--size + $login__error-notification-box-icon--margin-right);
+$_login__error-notification-box-label--color: $white;
+$_login__error-notification-box-label--font-weight: $font-weight-bold;
+
+// changed login variables 
+
+$login__body--bg-color: $grey__light--500;
+$_login__body-logo--bg: $login__body--bg-color url("images/logo_slogan.svg") no-repeat fixed 2% 96%;
+
+$_login__logo--bg: url("images/logo_transparent.svg") no-repeat transparent center;
+$_login__logo--height: 45px;
+
+$_login__container--bg-color: $white;
+$_login__container--left: 0;
+$_login__container--right: $_login__container--left;
+$_login__container--top: 45%;
+$_login__container--transform: translateY(-60%);
+$_login__container--margin: 0 auto;
+$_login__container--max-width: 600px;
+$_login__container--width: 100%;
+$_login__container--min-width: 350px;
+$_login__container--border-radius: 4px;
+$_login__container--box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+$_login__container--padding: $container-spacing-default__base;
+$_login__container-bp-xs--padding: $container-spacing-default__base $container-spacing-default__half;
+$_login__container-bp-xs--transform: translateY(0);
+
+$_login__logo-container--marging-bottom: $container-spacing-default__base + $container-spacing-default__third;
+
+$_login__content--min-height: 200px;
+$_login__content-label--margin: $container-spacing-default__third 0;
+$_login__content-label--min-height: 65px;
+$_login__content-main-label--font-size: 28px; //$font-size__h1;
+$_login__content-main-label--color: $grey__dark--700;
+$_login__content-info-label--font-size: $font-size__base;
+
+$_login__footer--padding: $container-spacing-default__base;
+
